@@ -4,7 +4,13 @@ $(document).ready(function(){
     $('#donate-button').attr('href', url)
   })
 
-  $('#donate-button').on('click', function(){
-    // var amount =
+  $('#donate-button').on('click', function(e){
+    var amount = $('#donate-field').val().split('$')[1]
+    var data = {donate: {amount: amount}}
+    $.ajax({
+      data: data,
+      method: 'put',
+      url: '/moneys/1'
+    })
   })
 })
