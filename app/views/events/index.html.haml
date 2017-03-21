@@ -21,7 +21,7 @@
         %h2#monday_event Sunny's will be open every Monday at 4:00 PM with Live Jazz and a Signature Cocktail!
     .row
       .col-md-8.col-md-offset-2
-        .row
+        .row.hidden-sm.hidden-xs
           .col-md-1
             %h3.column-heads
               Date
@@ -66,9 +66,9 @@
       .col-md-6.col-md-offset-3.text-center
         %h3 Via Venmo
     .row
-      .col-md-2.col-md-offset-4.text-center
+      .col-md-2.col-sm-2.col-xs-2.col-md-offset-4.col-sm-offset-4
         = text_field_tag :amount, '$', class: 'form-control', id: 'donate-field'
-      .col-md-2
+      .col-md-2.col-sm-2.col-xs-2
         %a#donate-button.btn.btn-primary{:href => "https://venmo.com/?txn=pay&audience=friends&recipients=@John-Maguire-15&note=Sunny's%20Forever!%20Thank%20You%20For%20Your%20Support!"} Donate!
     .row
       .col-md-6.col-md-offset-3.text-center
