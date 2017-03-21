@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One");
+/* line 1, /Users/johnmaguire/Projects/sunnys/sunnys_forever/app/assets/stylesheets/custom.scss */
+#monday_event {
+  padding: 5% 0% 5% 0%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+/* line 7, /Users/johnmaguire/Projects/sunnys/sunnys_forever/app/assets/stylesheets/custom.scss */
+#logo {
+  margin-top: 10%;
+  width: 100%;
+}
+
+/* line 12, /Users/johnmaguire/Projects/sunnys/sunnys_forever/app/assets/stylesheets/custom.scss */
+.column-heads {
+  border-bottom: 1px solid black;
+}
+
+/* line 16, /Users/johnmaguire/Projects/sunnys/sunnys_forever/app/assets/stylesheets/custom.scss */
+#events {
+  border-bottom: 1px solid black;
+  padding-bottom: 5%;
+  margin-bottom: 5%;
+}
+
+/* line 22, /Users/johnmaguire/Projects/sunnys/sunnys_forever/app/assets/stylesheets/custom.scss */
+body {
+  background: url("/assets/background-sunnys.png");
+  background-attachment: fixed;
+  background-position: center;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+/* line 29, /Users/johnmaguire/Projects/sunnys/sunnys_forever/app/assets/stylesheets/custom.scss */
+.progress {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/* line 34, /Users/johnmaguire/Projects/sunnys/sunnys_forever/app/assets/stylesheets/custom.scss */
+#money-meter {
+  margin: 5% 0% 5% 0%;
+  padding: 5% 0% 5% 0%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+/* line 41, /Users/johnmaguire/Projects/sunnys/sunnys_forever/app/assets/stylesheets/custom.scss */
+.money-text {
+  margin-top: 2%;
+}
+
+/* line 45, /Users/johnmaguire/Projects/sunnys/sunnys_forever/app/assets/stylesheets/custom.scss */
+.event {
+  padding-top: 2%;
+}
+
+/* line 49, /Users/johnmaguire/Projects/sunnys/sunnys_forever/app/assets/stylesheets/custom.scss */
+#donate {
+  border-bottom: 1px solid black;
+  margin-bottom: 5%;
+}
+
+/* line 54, /Users/johnmaguire/Projects/sunnys/sunnys_forever/app/assets/stylesheets/custom.scss */
+.footer {
+  margin-bottom: 1%;
+}
