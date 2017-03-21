@@ -1,0 +1,57 @@
+#monday_event {
+  padding: 5% 0% 5% 0%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#logo {
+  margin-top: 10%;
+  width: 100%;
+}
+
+.column-heads {
+  border-bottom: 1px solid black;
+}
+
+#events {
+  border-bottom: 1px solid black;
+  padding-bottom: 5%;
+  margin-bottom: 5%;
+}
+
+body {
+  background: url('/assets/background-sunnys.png');
+  background-attachment: fixed;
+  background-position: center;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.progress {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#money-meter {
+  margin: 5% 0% 5% 0%;
+  padding: 5% 0% 5% 0%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.money-text {
+  margin-top: 2%;
+}
+
+.event {
+  padding-top: 2%;
+}
+
+#donate {
+  border-bottom: 1px solid black;
+  margin-bottom: 5%;
+}
+
+.footer {
+  margin-bottom: 1%;
+}
+

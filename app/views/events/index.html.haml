@@ -1,0 +1,86 @@
+.container
+  .header-image
+    .row
+      .col-md-8.col-md-offset-2
+        = image_tag("sunnyslogo.png", id: 'logo')
+  #money-meter
+    %h3.text-center.money-text
+      = "So far we have raised $#{number_with_delimiter(@amount_raised.to_i)} out of #{@amount_needed}"
+    .row
+      .col-md-6.col-md-offset-3
+        .progress
+          .progress-bar.progress-bar-success.progress-bar-striped.active{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "40", :role => "progressbar", :style => "width: #{@goal_percent}"}
+            %span
+              = @goal_percent
+  %main#events
+    .row
+      .col-md-6.col-md-offset-3.text-center
+        %h1 EVENTS
+    .row
+      .col-md-6.col-md-offset-3.text-center
+        %h2#monday_event Sunny's will be open every Monday at 4:00 PM with Live Jazz and a Signature Cocktail!
+    .row
+      .col-md-8.col-md-offset-2
+        .row
+          .col-md-1
+            %h3.column-heads
+              Date
+          .col-md-4
+            %h3.column-heads
+              Location
+          .col-md-2
+            %h3.column-heads
+              Time
+          .col-md-2
+            %h3.column-heads
+              Tickets
+          .col-md-3
+            %h3.column-heads
+              Details
+        - @events.each do |event|
+          .row.event
+            .col-md-1
+              %h4
+                = event.date
+            .col-md-4
+              %h4
+                %a{:href => "#{event.location_url}"}
+                  = event.location
+            .col-md-2
+              %h4
+                = event.time
+            .col-md-2
+              %h4
+                - if event.ticket_url
+                  %a{:href => "#{event.ticket_url}"} Get Tickets
+                - else
+                  No Cover!
+            .col-md-3
+              %h5
+                = event.details
+  #donate
+    .row
+      .col-md-6.col-md-offset-3.text-center
+        %h3 Can't make it to one of our great events? Donate here!
+    .row
+      .col-md-6.col-md-offset-3.text-center
+        %h3 Via Venmo
+    .row
+      .col-md-2.col-md-offset-4.text-center
+        = text_field_tag :amount, '$', class: 'form-control', id: 'donate-field'
+      .col-md-2
+        %a#donate-button.btn.btn-primary{:href => "https://venmo.com/?txn=pay&audience=friends&recipients=@John-Maguire-15&note=Sunny's%20Forever!%20Thank%20You%20For%20Your%20Support!"} Donate!
+    .row
+      .col-md-6.col-md-offset-3.text-center
+        %h3 By Mail
+    .row
+      .col-md-6.col-md-offset-3.text-center
+        %h4 Mail Donations To:
+        %h4 253 Conover Street, Brooklyn, NY 11231
+  .footer
+    .row
+      .col-md-6.pull-left
+        %a{:href => "http://johnmaguiredeveloper.com/"} &copy; John Maguire Designs
+      .col-md-4.pull-right
+        %a{:href => "https://www.facebook.com/sunnysredhook/"}
+          %i.fa.fa-facebook-square.fa-3x{"aria-hidden" => "true"}
