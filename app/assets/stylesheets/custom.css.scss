@@ -20,7 +20,7 @@
 }
 
 body {
-  background: url('/assets/background-sunnys.png');
+  background: asset-url('background-sunnys.png');
   background-attachment: fixed;
   background-position: center;
   font-family: 'Fjalla One', sans-serif;
