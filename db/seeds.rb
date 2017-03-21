@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 # atlerier roquette
-e = Event.find_or_initialize_by({location: 'Atlerier Roquette', date: '4/1'})
+e = Event.find_or_initialize_by({location: 'Atelier Roquette', date: '4/1'})
 
 e.date = '4/1'
 e.time = '6:00 PM'
@@ -32,5 +32,5 @@ e = Event.find_or_initialize_by({location: 'Superfine', date: '3/26'})
 e.time = '7:00 PM'
 e.date = '3/26'
 e.location_url = 'https://goo.gl/maps/WRPYXHrn5ww'
-e.details = "Salt will be playing! No cover! 100\% of proceeds from Tito's Moscow Mules and Sixpoint Drafts will go to Sunny's Forever Fund!"
+e.details = "SALT will be playing! No cover! 100\% of proceeds from Tito's Moscow Mules and Sixpoint Drafts will go to Sunny's Forever Fund!"
 e.save
