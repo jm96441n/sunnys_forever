@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One");
+/* line 1, /Users/johnmaguire/Projects/sunnys/sunnys_forever/app/assets/stylesheets/custom.css.scss */
+#monday_event {
+  padding: 5% 0% 5% 0%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+/* line 7, /Users/johnmaguire/Projects/sunnys/sunnys_forever/app/assets/stylesheets/custom.css.scss */
+#logo {
+  margin-top: 10%;
+  width: 100%;
+}
+
+/* line 12, /Users/johnmaguire/Projects/sunnys/sunnys_forever/app/assets/stylesheets/custom.css.scss */
+.description {
+  padding-top: 4%;
+  font-size: 150%;
+}
+
+/* line 17, /Users/johnmaguire/Projects/sunnys/sunnys_forever/app/assets/stylesheets/custom.css.scss */
+.column-heads {
+  border-bottom: 1px solid black;
+}
+
+/* line 21, /Users/johnmaguire/Projects/sunnys/sunnys_forever/app/assets/stylesheets/custom.css.scss */
+#events {
+  border-bottom: 1px solid black;
+  padding-bottom: 5%;
+  margin-bottom: 5%;
+}
+
+/* line 27, /Users/johnmaguire/Projects/sunnys/sunnys_forever/app/assets/stylesheets/custom.css.scss */
+body {
+  background: url(/assets/background-sunnys-1284c8ecd3f298a907987e5b27724456867b88b016d413a2dea55206f259c6df.png);
+  background-attachment: fixed;
+  background-position: center;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+/* line 34, /Users/johnmaguire/Projects/sunnys/sunnys_forever/app/assets/stylesheets/custom.css.scss */
+.progress {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/* line 39, /Users/johnmaguire/Projects/sunnys/sunnys_forever/app/assets/stylesheets/custom.css.scss */
+#money-meter {
+  margin: 5% 0% 5% 0%;
+  padding: 5% 0% 5% 0%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+/* line 46, /Users/johnmaguire/Projects/sunnys/sunnys_forever/app/assets/stylesheets/custom.css.scss */
+.money-text {
+  margin-top: 2%;
+}
+
+/* line 50, /Users/johnmaguire/Projects/sunnys/sunnys_forever/app/assets/stylesheets/custom.css.scss */
+.event {
+  padding-top: 2%;
+}
+
+/* line 54, /Users/johnmaguire/Projects/sunnys/sunnys_forever/app/assets/stylesheets/custom.css.scss */
+#donate {
+  border-bottom: 1px solid black;
+  margin-bottom: 5%;
+}
+
+/* line 59, /Users/johnmaguire/Projects/sunnys/sunnys_forever/app/assets/stylesheets/custom.css.scss */
+.footer {
+  margin-bottom: 1%;
+}
