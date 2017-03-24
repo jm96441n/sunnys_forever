@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: MyString
+  location: MyString
+  location_url: MyString
+  time: MyString
+  ticket_url: MyString
+  details: MyString
+
+two:
+  date: MyString
+  location: MyString
+  location_url: MyString
+  time: MyString
+  ticket_url: MyString
+  details: MyString

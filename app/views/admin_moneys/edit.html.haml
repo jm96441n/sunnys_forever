@@ -1,0 +1,14 @@
+.row
+  .col-md-4.col-md-offset-4.text-center
+    %h4
+      = "Amount Currently Raised: #{@money.dollar}"
+
+.row
+  .col-md-4.col-md-offset-4.text-center
+    %h4 Below, enter the new current amount raised.
+.row
+  .col-md-4.col-md-offset-4
+    = form_for @money, url: "/admin_moneys/#{@money.id}", method: 'put' do |f|
+      = f.text_field :dollar
+      = f.submit 'Update'
+

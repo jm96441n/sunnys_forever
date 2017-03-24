@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Date:
+  = @admin_event.date
+%p
+  %b Location:
+  = @admin_event.location
+%p
+  %b Location url:
+  = @admin_event.location_url
+%p
+  %b Time:
+  = @admin_event.time
+%p
+  %b Ticket url:
+  = @admin_event.ticket_url
+%p
+  %b Details:
+  = @admin_event.details
+
+= link_to 'Edit', edit_admin_event_path(@admin_event)
+\|
+= link_to 'Back', admin_events_path

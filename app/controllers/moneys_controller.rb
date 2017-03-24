@@ -1,5 +1,7 @@
 class MoneysController < ApplicationController
 
+  before_action :authenticate_user!, only: [:edit, :update]
+
   def update
     m = Money.find(params[:id])
     amount = moneys_params[:amount].to_f
