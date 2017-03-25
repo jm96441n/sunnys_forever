@@ -13,16 +13,16 @@
     .row
       .col-md-6.col-md-offset-3
         .progress
-          .progress-bar.progress-bar-success.progress-bar-striped.active{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "40", :role => "progressbar", :style => "width: #{@goal_percent}; min-width: 2em;"}
+          .progress-bar.progress-bar-success.progress-bar-striped.active{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "40", :role => "progressbar", :style => "width: #{@goal_percent}; min-width: 3em;"}
             %span
-              = @goal_percent
+              = "$#{@amount_raised.to_i}"
   %main#events
     .row
       .col-md-6.col-md-offset-3.text-center
         %h1 EVENTS
     .row
       .col-md-6.col-md-offset-3.text-center
-        %h2#monday_event Sunny's will be open every Monday at 4:00 PM with Live Jazz starting at 7:00 PM and a Signature Cocktail!
+        %h2#monday_event Starting in April, Sunny's will be open every Monday at 4:00 PM with Live Jazz starting at 7:00 PM and a Signature Cocktail!
     .row
       .col-md-8.col-md-offset-2
         .row.hidden-sm.hidden-xs
