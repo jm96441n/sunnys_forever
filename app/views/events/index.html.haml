@@ -26,7 +26,7 @@
     .row
       .col-md-8.col-md-offset-2
         .row.hidden-sm.hidden-xs
-          .col-md-1
+          .col-md-2
             %h3.column-heads
               Date
           .col-md-4
@@ -35,15 +35,12 @@
           .col-md-2
             %h3.column-heads
               Time
-          .col-md-2
-            %h3.column-heads
-              Tickets
-          .col-md-3
+          .col-md-4
             %h3.column-heads
               Details
         - @events.each do |event|
           .row.event
-            .col-md-1
+            .col-md-2
               %h4
                 = event.date
             .col-md-4
@@ -53,13 +50,7 @@
             .col-md-2
               %h4
                 = event.time
-            .col-md-2
-              %h4
-                - if event.ticket_url
-                  %a{:href => "#{event.ticket_url}"} Get Tickets
-                - else
-                  No Cover!
-            .col-md-3
+            .col-md-4
               %h5
                 = event.details
   #donate
