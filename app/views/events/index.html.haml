@@ -26,16 +26,21 @@
     .row.horse-race
       .col-md-8.col-md-offset-2
         .col-md-1
-          = @horse.date
+          %h3
+            = @horse.date
         .col-md-3
-          %a{:href => "#{@horse.location_url}"}
-            = @horse.location
+          %h3
+            %a{:href => "#{@horse.location_url}"}
+              = @horse.location
         .col-md-2
-          %a{:href => "#{@horse.ticket_url}"} Get Tickets
+          %h3
+            %a{:href => "#{@horse.ticket_url}"} Get Tickets
         .col-md-2
-          = @horse.time
+          %h3
+            = @horse.time
         .col-md-4
-          = @horse.details
+          %h3
+            = @horse.details
     .row
       .col-md-8.col-md-offset-2
         .row.hidden-sm.hidden-xs
