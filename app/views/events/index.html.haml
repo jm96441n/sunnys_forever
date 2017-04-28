@@ -49,10 +49,10 @@
               = ''
           .col-md-4
             %h5
-              -# = @first.details
+              = @first.details
         .row.event
           .col-md-2
-            = ''
+            = @second.date
           .col-md-4
             %h4
               -# %a{:href => "#{@second.loction_url}"}
@@ -62,7 +62,7 @@
               -# = @second.time
           .col-md-4
             %h5
-              -# = @second.details
+              = @second.details
         - @events.each do |event|
           .row.event
             .col-md-2
