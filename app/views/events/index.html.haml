@@ -38,31 +38,6 @@
           .col-md-4
             %h3.column-heads
               Details
-        .row.event
-          .col-md-2
-            = ''
-          .col-md-4
-            %h4
-              = ''
-          .col-md-2
-            %h4
-              = ''
-          .col-md-4
-            %h5
-              = @first.details
-        .row.event
-          .col-md-2
-            = @second.date
-          .col-md-4
-            %h4
-              %a{:href => "#{@second.loction_url}"}
-                = @second.location
-          .col-md-2
-            %h4
-              = @second.time
-          .col-md-4
-            %h5
-              = @second.details
         - @events.each do |event|
           .row.event
             .col-md-2
