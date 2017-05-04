@@ -23,24 +23,24 @@
     .row
       .col-md-6.col-md-offset-3.text-center
         %h2#monday_event Starting in April, Sunny's will be open every Monday at 4:00 PM with Live Jazz starting at 7:00 PM and a Signature Cocktail!
-    .row.horse-race
-      .col-md-8.col-md-offset-2
-        .col-md-1
-          %h3
-            = @horse.date
-        .col-md-3
-          %h3
-            %a{:href => "#{@horse.location_url}"}
-              = @horse.location
-        .col-md-2
-          %h3
-            %a{:href => "#{@horse.ticket_url}"} Get Tickets
-        .col-md-2
-          %h3
-            = @horse.time
-        .col-md-4
-          %h3
-            = @horse.details
+    -# .row.horse-race
+    -#   .col-md-8.col-md-offset-2
+    -#     .col-md-1
+    -#       %h3
+    -#         = @horse.date
+    -#     .col-md-3
+    -#       %h3
+    -#         %a{:href => "#{@horse.location_url}"}
+    -#           = @horse.location
+    -#     .col-md-2
+    -#       %h3
+    -#         %a{:href => "#{@horse.ticket_url}" } Get Tickets
+    -#     .col-md-2
+    -#       %h3
+    -#         = @horse.time
+    -#     .col-md-4
+    -#       %h3
+    -#         = @horse.details
     .row
       .col-md-8.col-md-offset-2
         .row.hidden-sm.hidden-xs
@@ -61,40 +61,48 @@
             = ''
           .col-md-4
             %h4
-              = @first.location
+              -if @first && @first.location
+                = @first.location
           .col-md-2
             %h4
               = ''
           .col-md-4
             %h5
-              = @first.details
+              -if @first && @first.details
+                = @first.details
         .row.event
           .col-md-2
             = ''
           .col-md-4
             %h4
-              = @second.date
+              -if @second && @second.location
+                = @second.date
           .col-md-2
             %h4
               -# = @second.time
           .col-md-4
             %h5
-              = @second.details
+              -if @second && @second.details
+                = @second.details
         - @events.each do |event|
           .row.event
             .col-md-2
               %h4
-                = event.date
+                -if event && event.date
+                  = event.date
             .col-md-4
               %h4
-                %a{:href => "#{event.location_url}"}
-                  = event.location
+                -if event && event.location && event.location_url
+                  %a{:href => "#{event.location_url}"}
+                    = event.location
             .col-md-2
               %h4
-                = event.time
+                -if event && event.time
+                  = event.time
             .col-md-4
               %h5
-                = event.details
+                -if event && event.details
+                  = event.details
   #donate
     .row
       .col-md-6.col-md-offset-3.text-center
